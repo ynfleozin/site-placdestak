@@ -1,0 +1,23 @@
+.app-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 3px solid var(--cor1);
+  background-color: white;
+}
+
+.header-links{
+  list-style: none;
+  display: flex;
+}
+
+.header-links li{
+  font-size: 1.2rem;
+  margin: 0 30px;
+}
+
+.header-links li:hover{
+  border-bottom: 1px solid var(--cor1);
+}
+
