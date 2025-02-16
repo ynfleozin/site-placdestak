@@ -1,9 +1,94 @@
-.main-section{
+@import "../../../color-variables.scss";
+
+.main-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2.5rem;
+
+  .headline {
+    margin: 0 5rem;
+  }
+
+  span {
+    padding: 0 1rem;
+    background-color: $primary-color;
+    color: #ffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  h1 {
+    width: 600px;
+    font-size: 2.5rem;
+    color: $secondary-text;
+  }
 }
 
-@media (min-width: 1080px){
+.features-section {
+  display: flex;
+  justify-content: center;
+  background-color: #E9E9E9;
+  padding: 1rem;
 
+  .features {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .feature-item {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    text-align: left;
+    padding: 1rem;
+
+    .feature-icon {
+      width: 40px;
+      height: 40px;
+      margin: 0 10px;
+    }
+
+    .feature-text {
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  gap: 20px;
+
+  .about-info {
+    text-align: center;
+
+    h2 {
+      color: $primary-color;
+      font-size: 2.5rem;
+    }
+
+    p {
+      color: $primary-text;
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+  }
+
+}
+
+@media (min-width: 1080px) {
+  .main-section {
+    flex-direction: row;
+  }
 }
