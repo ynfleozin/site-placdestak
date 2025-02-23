@@ -4,10 +4,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2.5rem;
+  position: relative;
 
   .headline {
-    margin: 0 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
   }
 
   span {
@@ -21,12 +26,19 @@
   h1 {
     width: 600px;
     font-size: 2.5rem;
-    color: $secondary-text;
+    color: #ffff;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }
 
 .features-section {
   display: flex;
+  height: 150px;
   justify-content: center;
   background-color: #E9E9E9;
   padding: 1rem;
@@ -42,6 +54,9 @@
     flex: 1;
     text-align: left;
     padding: 1rem;
+    border-radius: 20px;
+    background: #f0f0f0;
+    margin: 0 5px;
 
     .feature-icon {
       width: 40px;
@@ -61,17 +76,23 @@
       }
     }
   }
+
+  .feature-item:hover{
+    background: #ffff;
+  }
 }
 
 .about-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 1rem;
-  gap: 20px;
+  padding: 1.5rem;
+  gap: 50px;
 
   .about-info {
-    text-align: center;
+    text-align: left;
+    width: 600px;
+    margin-right: 100px;
 
     h2 {
       color: $primary-color;
@@ -80,7 +101,7 @@
 
     p {
       color: $primary-text;
-      font-size: 1.5rem;
+      font-size: 1.1rem;
       font-weight: 300;
     }
   }
