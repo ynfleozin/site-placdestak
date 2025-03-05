@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Inject, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
 import { NgOptimizedImage } from '@angular/common';
 import { FooterComponent } from "../footer/footer.component";
@@ -10,7 +11,21 @@ import { FooterComponent } from "../footer/footer.component";
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit, OnDestroy {
+
+  headlineText = [
+    {
+      title: 'SUSTENTABILIDADE',
+      subtitle: 'Construção em Aço Leve - (Light Steel Framing)',
+      img: 'assets/imgs/bannerPlacdestak.webp'
+    },
+    {
+      title: 'CONFORTO TERMOACÚSTICO',
+      subtitle: 'Gesso Cartonado',
+      img: 'assets/imgs/bannerPlacdestak.webp'
+    },
+  ];
+
   features = [
     {
       icon: 'assets/icons/star.svg',
@@ -28,4 +43,42 @@ export class HomeComponent {
       text: 'Fale connosco e veja as melhores condições para o seu projeto.'
     }
   ];
+
+
+  services = [
+    {
+      title: 'Construção LSF',
+      description: 'O LSF (Light Steel Framing) é um sistema construtivo amplamente utilizado devido às suas vantagens, como resistência estrutural, durabilidade, sustentabilidade e flexibilidade de projeto.',
+      img: 'assets/imgs/bannerPlacdestak.webp'
+    },
+    {
+      title: 'Gesso Cartonado',
+      description: 'Conhecido também como Pladur (gesso cartonado ou gesso laminado), são excelentes opções técnicas e decorativas para paredes, tetos, lareiras, salas acústicas ou revestimentos (interiores ou exteriores) em material versátil, com óptimas características acústicas, térmicas e decorativas.',
+      img: 'assets/imgs/bannerPlacdestak.webp'
+    },
+    {
+      title: 'Tetos Amovível e Metálicos',
+      description: 'Os tetos amovíveis e metálicos são sistemas técnicos que permitem acesso fácil às instalações acima do teto, facilitando a manutenção e o reparo. Além disso, oferecem bom desempenho térmico e acústico, regulando a temperatura e reduzindo o ruído entre ambientes. Sua estética moderna, com opções de cores e texturas, permite personalização do ambiente de acordo com as preferências estéticas e funcionais.',
+      img: 'assets/imgs/bannerPlacdestak.webp'
+    },
+  ]
+
+  headlineIndex = 0;
+  private intervalId!: ReturnType<typeof setInterval>;
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+  ngOnInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      this.intervalId = setInterval(() => {
+        this.headlineIndex = (this.headlineIndex + 1) % this.headlineText.length;
+      }, 10000);
+    }
+  }
+
+  ngOnDestroy(): void {
+    if (isPlatformBrowser(this.platformId) && this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+  }
 }

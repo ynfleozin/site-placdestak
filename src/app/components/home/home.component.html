@@ -2,11 +2,11 @@
 <main>
   <section class="main-section">
     <div class="headline">
-      <span>SUSTENTABILIDADE</span>
-      <h1>Construção em Aço Leve - LSF
-        (Light Steel Framing)</h1>
+        <span>{{headlineText[headlineIndex].title}}</span>
+        <h1>{{headlineText[headlineIndex].subtitle}}</h1>
     </div>
-    <img src="assets/imgs/bannerPlacdestak.webp" alt="Banner">
+
+    <img [src]="headlineText[headlineIndex].img" alt="Banner">
   </section>
 
   <section class="features-section">
@@ -32,6 +32,24 @@
       </p>
     </div>
     <img ngSrc="assets/imgs/aboutImage.png" width="500" height="500">
+  </section>
+
+  <section class="services-section">
+    <div class="services-text">
+      <h2>EXPERIÊNCIA E QUALIDADE</h2>
+      <h3>Construção em Aço Leve - LSF (Light Steel Framing)
+        & Instalação de Gesso Cartonado</h3>
+    </div>
+    <div class="services">
+      @for(service of services; track service){
+        <div class="services-item">
+          <h3>{{service.title}}</h3>
+          <p>{{service.description}}</p>
+
+          <img [src]="service.img" alt="Service">
+        </div>
+      }
+    </div>
   </section>
 </main>
 <app-footer />
