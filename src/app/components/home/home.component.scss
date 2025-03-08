@@ -67,13 +67,13 @@
 
     .feature-text {
       h2 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: 500;
       }
 
       p {
-        font-size: 1rem;
-        font-weight: 200;
+        font-size: 1.1rem;
+        font-weight: 300;
       }
     }
   }
@@ -97,13 +97,13 @@
 
     h2 {
       color: $primary-color;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin-bottom: 15px;
     }
 
     p {
       color: $primary-text;
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       font-weight: 300;
     }
   }
@@ -128,34 +128,51 @@
     h3{
       width: 900px;
       font-weight: 700;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       color: $primary-color;
     }
   }
 
   .services{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 3rem;
 
     .services-item{
       width: 400px;
-      height: 550px;
+      height: 750px;
       border-radius: 30px;
       background: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+      text-align: center;
 
       h3{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
       }
 
       p{
+        font-size: 1.1rem;
         font-weight: 300;
         text-align: justify;
+      }
+
+      ul{
+        text-align: left;
+
+        li{
+          margin: 5px;
+        }
       }
 
       img{
         width: 100%;
       }
+
     }
   }
 }

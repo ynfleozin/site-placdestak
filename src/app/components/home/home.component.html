@@ -46,6 +46,14 @@
           <h3>{{service.title}}</h3>
           <p>{{service.description}}</p>
 
+          @if((service.advantages ?? []).length > 0){
+            <ul>
+              @for(advantage of service.advantages; track advantage){
+                <li>{{advantage}}</li>
+              }
+            </ul>
+          }
+
           <img [src]="service.img" alt="Service">
         </div>
       }

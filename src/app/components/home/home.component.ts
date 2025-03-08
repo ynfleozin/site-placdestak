@@ -49,17 +49,34 @@ export class HomeComponent implements OnInit, OnDestroy {
     {
       title: 'Construção LSF',
       description: 'O LSF (Light Steel Framing) é um sistema construtivo amplamente utilizado devido às suas vantagens, como resistência estrutural, durabilidade, sustentabilidade e flexibilidade de projeto.',
-      img: 'assets/imgs/bannerPlacdestak.webp'
+      img: 'assets/imgs/serviceTest.jpg',
+      advantages: [
+        'Conforto térmico e acústico',
+        'Construção mais segura',
+        'Tempo de construção reduzido',
+        'Sustentabilidade',
+        'Reduzida mão de obra e recursos',
+        'Ampliações simples',
+        'Soluções criativas e flexíveis',
+        'Controle de qualidade assegurado'
+      ]
     },
     {
       title: 'Gesso Cartonado',
       description: 'Conhecido também como Pladur (gesso cartonado ou gesso laminado), são excelentes opções técnicas e decorativas para paredes, tetos, lareiras, salas acústicas ou revestimentos (interiores ou exteriores) em material versátil, com óptimas características acústicas, térmicas e decorativas.',
-      img: 'assets/imgs/bannerPlacdestak.webp'
+      img: 'assets/imgs/serviceTest.jpg',
+      advantages: [
+        'Alto desempenho térmico, acústico e conforto no ambiente',
+        'Resistentes ao fogo, humidade e impacto',
+        'Segurança e durabilidade em diferentes ambientes',
+        'Podem receber diversos tipos de revestimentos, como pintura e aplicação de azulejos',
+        'Flexibilidade estética e possibilitando a integração com o estilo desejado'
+      ]
     },
     {
       title: 'Tetos Amovível e Metálicos',
       description: 'Os tetos amovíveis e metálicos são sistemas técnicos que permitem acesso fácil às instalações acima do teto, facilitando a manutenção e o reparo. Além disso, oferecem bom desempenho térmico e acústico, regulando a temperatura e reduzindo o ruído entre ambientes. Sua estética moderna, com opções de cores e texturas, permite personalização do ambiente de acordo com as preferências estéticas e funcionais.',
-      img: 'assets/imgs/bannerPlacdestak.webp'
+      img: 'assets/imgs/serviceTest.jpg'
     },
   ]
 
