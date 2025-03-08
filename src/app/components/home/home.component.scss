@@ -113,6 +113,7 @@
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -159,8 +160,72 @@
   }
 }
 
-@media (min-width: 1080px) {
-  .main-section {
-    flex-direction: row;
+.portfolio-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .portfolio-text{
+
+    h2{
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: $secondary-color;
+    }
+
+    h3{
+      width: 900px;
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: $primary-color;
+    }
   }
 }
+
+// /*Celulares médios e grandes (ex: iPhone 12, Galaxy)*/
+// @media (min-width: 481px) and (max-width: 768px) {
+//   .main-section {
+//     flex-direction: row;
+//   }
+
+//   .about-section{
+//     justify-content: center;
+//     flex-direction: column;
+
+//     .about-info{
+//       align-items: center;
+//       justify-content: center;
+//       text-align: center;
+//     }
+
+//     p{
+//       text-align: justify;
+//     }
+//   }
+
+//   .services-section{
+//     .services{
+//       flex-direction: column;
+//     }
+//   }
+// }
+
+// /*Tablets (ex: iPad)*/
+// @media (min-width: 769px) and (max-width: 1024px) {
+//   .main-section {
+//     flex-direction: row;
+//   }
+
+//   .about-section{
+//     flex-direction: column;
+//     text-align: justify;
+
+//   }
+
+//   .services-section{
+//     .services{
+//       flex-direction: column;
+//     }
+//   }
+// }
