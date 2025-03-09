@@ -80,6 +80,25 @@ export class HomeComponent implements OnInit, OnDestroy {
     },
   ]
 
+  portfolioImgs = [
+    {
+      img: 'assets/imgs/serviceTest.jpg',
+      alt: 'Casa da Música'
+    },
+    {
+      img: 'assets/imgs/serviceTest.jpg',
+      alt: 'Moradia T5'
+    },
+    {
+      img: 'assets/imgs/serviceTest.jpg',
+      alt: 'Apartamento'
+    },
+    {
+      img: 'assets/imgs/serviceTest.jpg',
+      alt: 'Currascaria Kasarão'
+    },
+  ]
+
   headlineIndex = 0;
   private intervalId!: ReturnType<typeof setInterval>;
 

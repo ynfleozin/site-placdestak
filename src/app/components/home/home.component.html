@@ -66,9 +66,11 @@
       <h3>Veja alguns trabalhos realizados</h3>
     </div>
     <div class="portfolio">
-      <div class="portfolio-item">
-
-      </div>
+      @for(p of portfolioImgs; track p){
+        <div class="portfolio-item">
+            <img [src]="p.img" alt="">
+        </div>
+      }
     </div>
   </section>
 </main>
