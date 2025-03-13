@@ -31,7 +31,7 @@
       }
 
       .nav-link:hover{
-        color: $primary-color;
+        color: #e0e0e0;
       }
     }
   }
@@ -44,6 +44,10 @@
       font-weight: 300;
       margin: 0 1rem;
     }
+
+    .terms-link:hover{
+      color: #e0e0e0;
+    }
   }
 
   .f-social{
@@ -55,7 +59,7 @@
     }
 
     .social-icon:hover{
-      color: #c0c0c0;
+      color: #e0e0e0;
     }
   }
 
