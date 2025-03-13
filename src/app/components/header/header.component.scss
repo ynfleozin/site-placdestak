@@ -10,6 +10,14 @@
   padding: 10px 0;
 }
 
+img{
+  cursor: pointer;
+}
+
+img:hover{
+  opacity: 85%;
+}
+
 .header-links{
   list-style: none;
   display: flex;
