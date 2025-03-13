@@ -1,0 +1,15 @@
+@import "../../../color-variables.scss";
+
+.contact-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+
+  .contact{
+    background-color: $primary-color;
+    height: 500px;
+    width: 500px;
+  }
+}
