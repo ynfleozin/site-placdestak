@@ -1,13 +1,58 @@
 <header class="app-header">
-  <ul class="header-links left">
-    <li><a routerLink="">HOME</a></li>
-    <li><a routerLink="">EMPRESA</a></li>
-  </ul>
+  <nav class="menu">
+    <div class="menu-desktop">
+      <ul class="desktop-links left">
+        <li><a routerLink="/">HOME</a></li>
+        <li><a routerLink="/empresa">EMPRESA</a></li>
+      </ul>
+      <img
+        routerLink="/"
+        ngSrc="assets/imgs/LogoPlacDestakText.png"
+        width="150"
+        height="100"
+        class="logo"
+      />
+      <ul class="desktop-links right">
+        <li><a routerLink="/orcamentos">ORÇAMENTOS</a></li>
+        <li><a routerLink="/contacto">CONTATO</a></li>
+      </ul>
+    </div>
 
-  <img routerLink="/" ngSrc="assets/imgs/LogoPlacDestakText.png" width="150" height="100" class="logo">
+    <div class="menu-mobile">
+      <img
+        routerLink="/"
+        ngSrc="assets/imgs/LogoPlacDestakText.png"
+        width="150"
+        height="100"
+        class="logo-mobile"
+      />
+      <button #menuToggle class="menu-toggle">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="50"
+          height="50"
+          viewBox="0 0 50 50"
+        >
+          <g
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          >
+            <path stroke="#5485A6" d="M6.25 25h37.5" />
+            <path stroke="#B3D8EA" d="M6.25 12.5h37.5m-37.5 25h37.5z" />
+          </g>
+        </svg>
+      </button>
 
-  <ul class="header-links right">
-    <li><a routerLink="/orcamentos">ORÇAMENTOS</a></li>
-    <li><a routerLink="/contacto">CONTACTO</a></li>
-  </ul>
+      <div #menuOverlay class="mobile-menu-overlay"></div>
+
+      <ul #mobileLinks class="mobile-links">
+        <li><a routerLink="/">HOME</a></li>
+        <li><a routerLink="/empresa">EMPRESA</a></li>
+        <li><a routerLink="/orcamentos">ORÇAMENTOS</a></li>
+        <li><a routerLink="/contacto">CONTACTO</a></li>
+      </ul>
+    </div>
+  </nav>
 </header>

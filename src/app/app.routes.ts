@@ -8,14 +8,17 @@ export const routes: Routes = [
   {
     path: "",
     component: HomeComponent,
+    title: 'Placdestak',
     pathMatch: 'full'
   },
   {
     path: "orcamentos",
+    title: 'Orçamentos - Placdestak',
     component: BudgetComponent
   },
   {
     path: "contacto",
+    title: 'Contacto - Placdestak',
     component: ContactComponent
   },
   {
