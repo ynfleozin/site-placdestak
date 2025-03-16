@@ -1,4 +1,4 @@
-import { Component, Inject, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
+import { Component, HostListener, Inject, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
 import { NgOptimizedImage } from '@angular/common';
@@ -17,12 +17,14 @@ export class HomeComponent implements OnInit, OnDestroy {
     {
       title: 'SUSTENTABILIDADE',
       subtitle: 'Construção em Aço Leve - (Light Steel Framing)',
-      img: 'assets/imgs/bannerPlacdestak.webp'
+      imgDesktop: 'assets/imgs/bannerPlacdestak.webp',
+      imgMobile: 'assets/imgs/bannerMobile.jpg'
     },
     {
       title: 'CONFORTO TERMOACÚSTICO',
       subtitle: 'Gesso Cartonado',
-      img: 'assets/imgs/bannerPlacdestak.webp'
+      imgDesktop: 'assets/imgs/bannerPlacdestak.webp',
+      imgMobile: 'assets/imgs/bannerMobile.jpg'
     },
   ];
 
@@ -99,6 +101,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     },
   ]
 
+  isMobile = window.innerWidth <= 768;
   headlineIndex = 0;
   private intervalId!: ReturnType<typeof setInterval>;
 
@@ -116,5 +119,10 @@ export class HomeComponent implements OnInit, OnDestroy {
     if (isPlatformBrowser(this.platformId) && this.intervalId) {
       clearInterval(this.intervalId);
     }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(){
+    this.isMobile = window.innerWidth <= 768;
   }
 }

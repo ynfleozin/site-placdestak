@@ -2,60 +2,77 @@
 <main>
   <section class="main-section">
     <div class="headline">
-        <span>{{headlineText[headlineIndex].title}}</span>
-        <h1>{{headlineText[headlineIndex].subtitle}}</h1>
+      <span>{{ headlineText[headlineIndex].title }}</span>
+      <h1>{{ headlineText[headlineIndex].subtitle }}</h1>
     </div>
 
-    <img [src]="headlineText[headlineIndex].img" alt="Banner">
+    <img
+      [src]="
+        isMobile
+          ? headlineText[headlineIndex].imgMobile
+          : headlineText[headlineIndex].imgDesktop
+      "
+      alt="Banner"
+    />
   </section>
 
   <section class="features-section">
     <div class="features">
       @for (feature of features; track feature) {
-        <div class="feature-item">
-          <img [src]="feature.icon" class="feature-icon"/>
-          <div class="feature-text">
-            <h2>{{ feature.title }}</h2>
-            <p>{{ feature.text }}</p>
-          </div>
+      <div class="feature-item">
+        <img [src]="feature.icon" class="feature-icon" />
+        <div class="feature-text">
+          <h2>{{ feature.title }}</h2>
+          <p>{{ feature.text }}</p>
         </div>
+      </div>
       }
     </div>
   </section>
-
 
   <section class="about-section">
     <div class="about-info">
       <h2>SOBRE A EMPRESA</h2>
       <p>
-        A PlacDestak é uma empresa dedicada à Construção em Aço Leve - LSF (Light Steel Framing) e aplicação de tetos falsos e divisórias em Gesso Cartonado (Pladur). Nossa história começou em 2008, quando as atividades foram iniciadas, e posteriormente, em 2019, a empresa foi oficialmente fundada com o objetivo de melhor atender aos clientes. Ao longo dos anos, a PlacDestak tem se empenhado em oferecer soluções sustentáveis, eficientes e inovadoras adaptadas às necessidades de cada projeto. Trabalhamos diariamente para lhe prestar um serviço personalizado de qualidade e excelência, combinando conhecimento técnico e matérias primas ecoeficientes. Atuamos em todo o território nacional.
+        A PlacDestak é uma empresa dedicada à Construção em Aço Leve - LSF
+        (Light Steel Framing) e aplicação de tetos falsos e divisórias em Gesso
+        Cartonado (Pladur). Nossa história começou em 2008, quando as atividades
+        foram iniciadas, e posteriormente, em 2019, a empresa foi oficialmente
+        fundada com o objetivo de melhor atender aos clientes. Ao longo dos
+        anos, a PlacDestak tem se empenhado em oferecer soluções sustentáveis,
+        eficientes e inovadoras adaptadas às necessidades de cada projeto.
+        Trabalhamos diariamente para lhe prestar um serviço personalizado de
+        qualidade e excelência, combinando conhecimento técnico e matérias
+        primas ecoeficientes. Atuamos em todo o território nacional.
       </p>
     </div>
-    <img ngSrc="assets/imgs/aboutImage.png" width="500" height="500">
+    <img ngSrc="assets/imgs/aboutImage.png" width="500" height="500" />
   </section>
 
   <section class="services-section">
     <div class="services-text">
       <h2>EXPERIÊNCIA E QUALIDADE</h2>
-      <h3>Construção em Aço Leve - LSF (Light Steel Framing)
-        & Instalação de Gesso Cartonado</h3>
+      <h3>
+        Construção em Aço Leve - LSF (Light Steel Framing) & Instalação de Gesso
+        Cartonado
+      </h3>
     </div>
     <div class="services">
       @for(service of services; track service){
-        <div class="services-item">
-          <h3>{{service.title}}</h3>
-          <p>{{service.description}}</p>
+      <div class="services-item">
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
 
-          @if((service.advantages ?? []).length > 0){
-            <ul>
-              @for(advantage of service.advantages; track advantage){
-                <li>{{advantage}}</li>
-              }
-            </ul>
+        @if((service.advantages ?? []).length > 0){
+        <ul>
+          @for(advantage of service.advantages; track advantage){
+          <li>{{ advantage }}</li>
           }
+        </ul>
+        }
 
-          <img [src]="service.img" alt="Service">
-        </div>
+        <img [src]="service.img" alt="Service" />
+      </div>
       }
     </div>
   </section>
@@ -67,9 +84,9 @@
     </div>
     <div class="portfolio">
       @for(p of portfolioImgs; track p){
-        <div class="portfolio-item">
-            <img [src]="p.img" alt="">
-        </div>
+      <div class="portfolio-item">
+        <img [src]="p.img" alt="" />
+      </div>
       }
     </div>
   </section>

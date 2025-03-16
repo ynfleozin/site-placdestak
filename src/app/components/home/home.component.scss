@@ -13,24 +13,25 @@
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 2;
+
+    span {
+      padding: 0 1rem;
+      background-color: $primary-color;
+      color: #ffff;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      width: 600px;
+      font-size: 3rem;
+      margin-top: 10px;
+      color: #ffff;
+    }
   }
 
-  span {
-    padding: 0 1rem;
-    background-color: $primary-color;
-    color: #ffff;
-    font-size: 2rem;
-    font-weight: 700;
-  }
 
-  h1 {
-    width: 600px;
-    font-size: 3rem;
-    margin-top: 10px;
-    color: #ffff;
-  }
-
-  img{
+  img {
     width: 100%;
     height: auto;
     display: block;
@@ -78,7 +79,7 @@
     }
   }
 
-  .feature-item:hover{
+  .feature-item:hover {
     background: #ffff;
   }
 }
@@ -109,7 +110,7 @@
   }
 }
 
-.services-section{
+.services-section {
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -118,14 +119,14 @@
   align-items: center;
   text-align: center;
 
-  .services-text{
-    h2{
+  .services-text {
+    h2 {
       font-weight: 500;
       font-size: 1.2rem;
       color: $secondary-color;
     }
 
-    h3{
+    h3 {
       width: 900px;
       font-weight: 700;
       font-size: 2.8rem;
@@ -133,13 +134,13 @@
     }
   }
 
-  .services{
+  .services {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
 
-    .services-item{
+    .services-item {
       width: 400px;
       height: 750px;
       border-radius: 30px;
@@ -151,25 +152,25 @@
       padding: 2rem;
       text-align: center;
 
-      h3{
+      h3 {
         font-size: 1.5rem;
       }
 
-      p{
+      p {
         font-size: 1.1rem;
         font-weight: 300;
         text-align: justify;
       }
 
-      ul{
+      ul {
         text-align: left;
 
-        li{
+        li {
           margin: 5px;
         }
       }
 
-      img{
+      img {
         width: 100%;
       }
 
@@ -177,23 +178,23 @@
   }
 }
 
-.portfolio-section{
+.portfolio-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 
-  .portfolio-text{
+  .portfolio-text {
     margin: 2rem;
 
-    h2{
+    h2 {
       font-weight: 500;
       font-size: 1.2rem;
       color: $secondary-color;
     }
 
-    h3{
+    h3 {
       width: 900px;
       font-weight: 700;
       font-size: 2.5rem;
@@ -201,63 +202,78 @@
     }
   }
 
-  .portfolio{
+  .portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
 
-    .portfolio-item{
+    .portfolio-item {
       width: 400px;
       margin: 15px 0;
     }
   }
 }
 
-// /*Celulares médios e grandes (ex: iPhone 12, Galaxy)*/
-// @media (min-width: 481px) and (max-width: 768px) {
-//   .main-section {
-//     flex-direction: row;
-//   }
+@media (max-width: 480px) {
+}
 
-//   .about-section{
-//     justify-content: center;
-//     flex-direction: column;
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: row;
 
-//     .about-info{
-//       align-items: center;
-//       justify-content: center;
-//       text-align: center;
-//     }
+    .headline{
+      img{
+        height: 500px;
+      }
+    }
+  }
 
-//     p{
-//       text-align: justify;
-//     }
-//   }
+  .features-section{
+    .features{
+      .feature-item{
 
-//   .services-section{
-//     .services{
-//       flex-direction: column;
-//     }
-//   }
-// }
+      }
+    }
+  }
 
-// /*Tablets (ex: iPad)*/
-// @media (min-width: 769px) and (max-width: 1024px) {
-//   .main-section {
-//     flex-direction: row;
-//   }
+  .about-section {
+    justify-content: center;
+    flex-direction: column;
 
-//   .about-section{
-//     flex-direction: column;
-//     text-align: justify;
+    .about-info {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-//   }
+    p {
+      text-align: justify;
+    }
+  }
 
-//   .services-section{
-//     .services{
-//       flex-direction: column;
-//     }
-//   }
-// }
+  .services-section {
+    .services {
+      flex-direction: column;
+    }
+  }
+}
+
+@media(max-width: 1024px) {
+  .main-section {
+    flex-direction: row;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: justify;
+
+  }
+
+  .services-section {
+    .services {
+      flex-direction: column;
+    }
+  }
+}
