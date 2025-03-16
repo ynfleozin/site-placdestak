@@ -1,6 +1,6 @@
 @import "../../../color-variables.scss";
 
-.main-section {
+.headline-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,11 +8,7 @@
 
   .headline {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    z-index: 2;
 
     span {
       padding: 0 1rem;
@@ -220,12 +216,15 @@
 }
 
 @media (max-width: 768px) {
-  .main-section {
-    flex-direction: row;
-
+  .headline-section {
     .headline{
-      img{
-        height: 500px;
+      span{
+        font-size: 1.5rem;
+      }
+
+      h1{
+        width: 100%;
+        font-size: 2.5rem;
       }
     }
   }
