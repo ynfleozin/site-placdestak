@@ -245,7 +245,7 @@
       margin-right: 0;
 
       h2{
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
 
       p {
@@ -256,6 +256,17 @@
   }
 
   .services-section {
+    .services-text {
+      h2 {
+        font-size: 1rem;
+      }
+
+      h3 {
+        width: 100%;
+        font-size: 2rem;
+      }
+    }
+
     .services {
       flex-direction: column;
     }
