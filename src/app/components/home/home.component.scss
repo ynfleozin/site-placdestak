@@ -230,11 +230,7 @@
   }
 
   .features-section{
-    .features{
-      .feature-item{
-
-      }
-    }
+    display: none;
   }
 
   .about-section {
@@ -242,13 +238,20 @@
     flex-direction: column;
 
     .about-info {
+      width: 100%;
       align-items: center;
       justify-content: center;
       text-align: center;
-    }
+      margin-right: 0;
 
-    p {
-      text-align: justify;
+      h2{
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1rem;
+        text-align: justify;
+      }
     }
   }
 
