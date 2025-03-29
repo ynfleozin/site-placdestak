@@ -1,13 +1,14 @@
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { NgOptimizedImage } from '@angular/common';
+import { state, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [NgOptimizedImage, RouterLink],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements AfterViewInit {
   @ViewChild('menuToggle', { static: false }) menuToggle!: ElementRef;

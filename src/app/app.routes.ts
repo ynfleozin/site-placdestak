@@ -3,6 +3,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { BudgetComponent } from './components/budget/budget.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { CompanyComponent } from './components/company/company.component';
 
 export const routes: Routes = [
   {
@@ -20,6 +21,11 @@ export const routes: Routes = [
     path: "contacto",
     title: 'Contacto - Placdestak',
     component: ContactComponent
+  },
+  {
+    path: "empresa",
+    title: 'Empresa - Placdestak',
+    component: CompanyComponent
   },
   {
     path: "**",
