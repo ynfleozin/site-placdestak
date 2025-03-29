@@ -1,0 +1,27 @@
+@import "../../../color-variables.scss";
+
+.company-section{
+  display: flex;
+  flex-direction: column;
+  .company{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+      margin: 15px 0px;
+      font-size: 2rem;
+      text-align: center;
+      border-bottom: 3px solid $primary-color;
+      width: 200px;
+    }
+
+    p{
+      margin: 15px 0px;
+      font-size: 1.2rem;
+      font-weight: 300;
+      text-align: justify;
+    }
+  }
+}
