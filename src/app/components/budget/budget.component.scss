@@ -40,8 +40,9 @@
         .form-control{
           margin: 10px 0px;
           width: 100%;
-          height: 2.5rem;
           border: none;
+          border-radius: 5px;
+          padding: 1rem;
         }
 
         .send-btn {
@@ -54,10 +55,43 @@
         }
 
         .send-btn:hover {
-          background-color: #E9E9E9;
-          color: white;
+          background-color: #295c7e;
+        }
+      }
+    }
+  }
+
+  .image{
+    img{
+      width: 500px;
+      height: 600px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .budget-section {
+    .content {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      .container {
+        width: 100%;
+        padding: 1rem;
+      }
+
+      .image {
+        img {
+          width: 300px;
+          height: 400px;
         }
       }
     }
   }
 }
+
+@media(max-width: 1024px) {
+
+}
+
