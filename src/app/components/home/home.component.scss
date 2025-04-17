@@ -283,6 +283,19 @@
       }
     }
   }
+
+  .portfolio-section{
+    .portfolio-text{
+      h2{
+        font-size: 1rem;
+      }
+
+      h3{
+        width: 300px;
+        font-size: 2rem;
+      }
+    }
+  }
 }
 
 @media(max-width: 1024px) {
