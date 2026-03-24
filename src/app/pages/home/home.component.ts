@@ -7,9 +7,9 @@ import {
   PLATFORM_ID,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { HeaderComponent } from '../header/header.component';
 import { NgOptimizedImage } from '@angular/common';
-import { FooterComponent } from '../footer/footer.component';
+import { HeaderComponent } from '../../components/header/header.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 import { PortfolioCardComponent } from "../../shared/components/portfolio-card/portfolio-card.component";
 import { FEATURES, HEADLINE_TEXT, PORTFOLIO_IMGS, SERVICES } from '../../shared/data/home-data';
 
