@@ -10,8 +10,8 @@ import { isPlatformBrowser } from '@angular/common';
 import { NgOptimizedImage } from '@angular/common';
 import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
-import { PortfolioCardComponent } from "../../shared/components/portfolio-card/portfolio-card.component";
-import { FEATURES, HEADLINE_TEXT, PORTFOLIO_IMGS, SERVICES } from '../../shared/data/home-data';
+import { PortfolioCardComponent } from "../../components/portfolio-card/portfolio-card.component";
+import { FEATURES, HEADLINE_TEXT, PORTFOLIO_IMGS, SERVICES } from '../../data/home-data';
 
 @Component({
   selector: 'app-home',
