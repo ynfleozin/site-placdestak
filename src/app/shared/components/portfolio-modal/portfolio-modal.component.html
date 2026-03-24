@@ -1,0 +1,27 @@
+<div class="modal-header">
+  <h2 mat-dialog-title>{{ data.title }}</h2>
+  <button mat-icon-button (click)="close()"> <mat-icon>close</mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content class="modal-body">
+  <div class="carousel-container">
+    <img [src]="data.images[currentIndex]" [alt]="data.title" class="main-image">
+
+    @if (data.images.length > 1) {
+      <button mat-mini-fab class="nav-btn prev" (click)="previousImage()"> <mat-icon>chevron_left</mat-icon>
+      </button>
+
+      <button mat-mini-fab class="nav-btn next" (click)="nextImage()"> <mat-icon>chevron_right</mat-icon>
+      </button>
+    }
+  </div>
+
+  @if (data.images.length > 1) {
+    <div class="indicators">
+      @for (img of data.images; track $index) {
+        <div class="dot" [class.active]="currentIndex === $index"></div>
+      }
+    </div>
+  }
+</div>
