@@ -19,13 +19,13 @@
   <section class="features-section">
     <div class="features">
       @for (feature of features; track feature) {
-      <div class="feature-item">
-        <img [src]="feature.icon" class="feature-icon" />
-        <div class="feature-text">
-          <h2>{{ feature.title }}</h2>
-          <p>{{ feature.text }}</p>
+        <div class="feature-item">
+          <img [src]="feature.icon" class="feature-icon" />
+          <div class="feature-text">
+            <h2>{{ feature.title }}</h2>
+            <p>{{ feature.text }}</p>
+          </div>
         </div>
-      </div>
       }
     </div>
   </section>
@@ -58,21 +58,21 @@
       </h3>
     </div>
     <div class="services">
-      @for(service of services; track service){
-      <div class="services-item">
-        <h3>{{ service.title }}</h3>
-        <p>{{ service.description }}</p>
+      @for (service of services; track service) {
+        <div class="services-item">
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
 
-        @if((service.advantages ?? []).length > 0){
-        <ul>
-          @for(advantage of service.advantages; track advantage){
-          <li>{{ advantage }}</li>
+          @if ((service.advantages ?? []).length > 0) {
+            <ul>
+              @for (advantage of service.advantages; track advantage) {
+                <li>{{ advantage }}</li>
+              }
+            </ul>
           }
-        </ul>
-        }
 
-        <img [src]="service.img" alt="Service" />
-      </div>
+          <img [src]="service.img" alt="Service" />
+        </div>
       }
     </div>
   </section>
@@ -82,11 +82,10 @@
       <h2>NOSSO PORTFÓLIO</h2>
       <h3>Veja alguns trabalhos realizados</h3>
     </div>
+
     <div class="portfolio">
-      @for(p of portfolioImgs; track p){
-      <div class="portfolio-item">
-        <img [src]="p.img" alt="" />
-      </div>
+      @for (p of portfolioImgs; track p) {
+        <app-portfolio-card [imageSrc]="p.img" />
       }
     </div>
   </section>

@@ -10,11 +10,12 @@ import { isPlatformBrowser } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
 import { NgOptimizedImage } from '@angular/common';
 import { FooterComponent } from '../footer/footer.component';
+import { PortfolioCardComponent } from "../../shared/components/portfolio-card/portfolio-card.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, NgOptimizedImage, FooterComponent],
+  imports: [HeaderComponent, NgOptimizedImage, FooterComponent, PortfolioCardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
