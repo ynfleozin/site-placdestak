@@ -15,14 +15,13 @@ export class PortfolioCardComponent {
   constructor(private dialog: MatDialog) {}
 
   openImages(): void {
-    (this.dialog.open(PortfolioModalComponent),
-      {
-        width: '900px',
-        maxWidth: '95vw',
-        data: {
-          title: this.item.title,
-          images: this.item.projectImages,
-        },
-      });
+    this.dialog.open(PortfolioModalComponent, {
+      width: '900px',
+      maxWidth: '95vw',
+      data: {
+        title: this.item.title,
+        images: this.item.projectImages,
+      },
+    });
   }
 }
