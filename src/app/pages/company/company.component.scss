@@ -1,27 +1,125 @@
 @import "../../../color-variables.scss";
 
-.company-section{
+.company-section {
   display: flex;
   flex-direction: column;
-  .company{
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  gap: 5rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 
-    h2{
-      margin: 15px 0px;
-      font-size: 2rem;
-      text-align: center;
-      border-bottom: 3px solid $primary-color;
-      width: 200px;
+  .content-block {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    &.reverse {
+      flex-direction: row-reverse;
     }
 
-    p{
-      margin: 15px 0px;
-      font-size: 1.2rem;
-      font-weight: 300;
-      text-align: justify;
+    .image-wrapper {
+      flex: 1;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+      }
+    }
+
+    .text-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        margin-bottom: 1.5rem;
+        font-size: 2.2rem;
+        color: $primary-color;
+        position: relative;
+        padding-bottom: 10px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 60px;
+          height: 4px;
+          background-color: $secondary-color;
+          border-radius: 2px;
+        }
+      }
+
+      p {
+        margin-bottom: 1rem;
+        font-size: 1.15rem;
+        line-height: 1.6;
+        color: #444;
+        text-align: justify;
+      }
+
+      .highlight-text {
+        margin-top: 1.5rem;
+        font-weight: 500;
+        font-style: italic;
+        color: $primary-color;
+      }
+
+      .services-list {
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0;
+
+        li {
+          font-size: 1.1rem;
+          margin-bottom: 10px;
+          padding-left: 30px;
+          position: relative;
+          color: #333;
+
+          &::before {
+            content: '•';
+            color: $primary-color;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .company-section {
+    gap: 3rem;
+    padding: 2rem 1rem;
+
+    .content-block,
+    .content-block.reverse {
+      flex-direction: column;
+      text-align: center;
+
+      .text-wrapper {
+        align-items: center;
+
+        h2::after {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        p {
+          text-align: center;
+        }
+
+        .services-list li {
+          text-align: left;
+        }
+      }
     }
   }
 }
