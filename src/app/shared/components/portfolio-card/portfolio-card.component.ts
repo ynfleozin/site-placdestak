@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { PortfolioModalComponent } from '../portfolio-modal/portfolio-modal.component';
 
 @Component({
   selector: 'app-portfolio-card',
@@ -8,7 +10,19 @@ import { Component, Input } from '@angular/core';
   styleUrl: './portfolio-card.component.scss',
 })
 export class PortfolioCardComponent {
-  @Input({ required: true }) imageSrc!: string;
+  @Input({ required: true }) item!: any;
 
-  @Input() altText: string = 'Imagem do portfólio';
+  constructor(private dialog: MatDialog) {}
+
+  openImages(): void {
+    (this.dialog.open(PortfolioModalComponent),
+      {
+        width: '900px',
+        maxWidth: '95vw',
+        data: {
+          title: this.item.title,
+          images: this.item.projectImages,
+        },
+      });
+  }
 }
