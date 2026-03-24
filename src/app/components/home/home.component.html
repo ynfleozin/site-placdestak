@@ -84,8 +84,8 @@
     </div>
 
     <div class="portfolio">
-      @for (p of portfolioImgs; track p) {
-        <app-portfolio-card [imageSrc]="p.img" />
+      @for (p of portfolioImgs; track p.title) {
+        <app-portfolio-card [item]="p" />
       }
     </div>
   </section>
