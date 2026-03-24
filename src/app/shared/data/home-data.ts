@@ -72,12 +72,12 @@ export const SERVICES = [
 export const PORTFOLIO_IMGS = [
   {
     id: 1,
-    img: 'assets/imgs/serviceTest.jpg',
-    title: 'Casa da Música',
+    img: 'assets/imgs/projects/moradia-belverde/moradia-belvedere-01.png',
+    title: 'Moradia em Belverde',
     projectImages: [
-      'assets/imgs/serviceTest.jpg',
-      'assets/imgs/outra-foto-1.jpg',
-      'assets/imgs/outra-foto-2.jpg',
+      'assets/imgs/projects/moradia-belverde/moradia-belvedere-01.png',
+      'assets/imgs/projects/moradia-belverde/moradia-belvedere-02.png',
+      'assets/imgs/projects/moradia-belverde/moradia-belvedere-01.png',
     ],
   },
 ];
