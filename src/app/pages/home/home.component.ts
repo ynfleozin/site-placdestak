@@ -8,15 +8,13 @@ import {
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { NgOptimizedImage } from '@angular/common';
-import { HeaderComponent } from '../../components/header/header.component';
-import { FooterComponent } from '../../components/footer/footer.component';
 import { PortfolioCardComponent } from "../../components/portfolio-card/portfolio-card.component";
 import { FEATURES, HEADLINE_TEXT, PORTFOLIO_IMGS, SERVICES } from '../../data/home-data';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, NgOptimizedImage, FooterComponent, PortfolioCardComponent],
+  imports: [NgOptimizedImage, PortfolioCardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
