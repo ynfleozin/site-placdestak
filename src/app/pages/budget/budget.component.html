@@ -1,58 +1,63 @@
-<section class="budget-section">
-  <img src="" alt="" />
-  <h2>Pedido de Orçamento</h2>
+<section class="budget-section" id="orcamento">
+  <div class="section-header">
+    <h2>Pedido de Orçamento</h2>
+    <p>Preencha os dados abaixo e entraremos em contacto brevemente.</p>
+  </div>
 
-  <div class="content">
-    <div class="container">
-      <h3>Solicite aqui o seu pedido:</h3>
+  <div class="content-wrapper">
+    <div class="form-container">
       <form>
         <div class="form-group">
-          <label for="name">Nome: </label>
+          <label for="name">Nome completo</label>
           <input
             type="text"
-            class="form-control"
             id="name"
             name="name"
-            placeholder="Digite seu nome"
+            placeholder="Ex: João Silva"
             required
           />
         </div>
-        <div class="form-group">
-          <label for="email">Email: </label>
-          <input
-            type="text"
-            class="form-control"
-            id="email"
-            name="email"
-            placeholder="Digite seu e-mail"
-            required
-          />
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seu@email.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="(+351) 900 000 000"
+              required
+            />
+          </div>
         </div>
+
         <div class="form-group">
-          <label for="phone">Telefone: </label>
-          <input
-            type="text"
-            class="form-control"
-            id="phone"
-            name="phone"
-            placeholder="Digite seu telefone"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="message">Mensagem: </label>
+          <label for="message">Mensagem ou detalhes do projeto</label>
           <textarea
-            class="form-control"
-            rows="3"
-            name="message"
             id="message"
+            name="message"
+            rows="4"
+            placeholder="Descreva o que precisa..."
+            required
           ></textarea>
         </div>
-        <input type="submit" class="send-btn" value="Enviar" />
+
+        <button type="submit" class="submit-btn">Solicitar Orçamento</button>
       </form>
     </div>
-    <div class="image">
-      <img src="assets/imgs/serviceTest.jpg" alt="" />
+
+    <div class="image-container">
+      <img src="assets/imgs/serviceTest.jpg" alt="Projeto de construção" />
     </div>
   </div>
 </section>
