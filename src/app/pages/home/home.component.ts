@@ -8,7 +8,6 @@ import {
   NgZone,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { NgOptimizedImage } from '@angular/common';
 import {
   FEATURES,
   HEADLINE_TEXT,
@@ -20,7 +19,7 @@ import { PortfolioCardComponent } from '../../components/portfolio-card/portfoli
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgOptimizedImage, PortfolioCardComponent],
+  imports: [ PortfolioCardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

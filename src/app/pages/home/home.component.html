@@ -1,25 +1,29 @@
 <main>
   <section class="headline-section">
-    <div class="headline">
-      <span>{{ headlineText[headlineIndex].title }}</span>
-      <h1>{{ headlineText[headlineIndex].subtitle }}</h1>
-    </div>
-
+    <div class="overlay"></div>
     <img
       [src]="
         isMobile
           ? headlineText[headlineIndex].imgMobile
           : headlineText[headlineIndex].imgDesktop
       "
-      alt="Banner"
+      alt="Banner PlacDestak"
+      class="banner-img fade-in-image"
     />
+
+    <div class="headline slide-up-text">
+      <span>{{ headlineText[headlineIndex].title }}</span>
+      <h1>{{ headlineText[headlineIndex].subtitle }}</h1>
+    </div>
   </section>
 
   <section class="features-section">
-    <div class="features">
-      @for (feature of features; track feature) {
-        <div class="feature-item">
-          <img [src]="feature.icon" class="feature-icon" />
+    <div class="features-grid">
+      @for (feature of features; track feature.title) {
+        <div class="feature-card">
+          <div class="icon-wrapper">
+            <img [src]="feature.icon" [alt]="feature.title" />
+          </div>
           <div class="feature-text">
             <h2>{{ feature.title }}</h2>
             <p>{{ feature.text }}</p>
@@ -30,59 +34,64 @@
   </section>
 
   <section class="about-section">
-    <div class="about-info">
-      <h2>SOBRE A EMPRESA</h2>
-      <p>
-        A PlacDestak é uma empresa dedicada à Construção em Aço Leve - LSF
-        (Light Steel Framing) e aplicação de tetos falsos e divisórias em Gesso
-        Cartonado (Pladur). Nossa história começou em 2008, quando as atividades
-        foram iniciadas, e posteriormente, em 2019, a empresa foi oficialmente
-        fundada com o objetivo de melhor atender aos clientes. Ao longo dos
-        anos, a PlacDestak tem se empenhado em oferecer soluções sustentáveis,
-        eficientes e inovadoras adaptadas às necessidades de cada projeto.
-        Trabalhamos diariamente para lhe prestar um serviço personalizado de
-        qualidade e excelência, combinando conhecimento técnico e matérias
-        primas ecoeficientes. Atuamos em todo o território nacional.
-      </p>
+    <div class="about-content">
+      <div class="about-info">
+        <h2>SOBRE A EMPRESA</h2>
+        <p>
+          A PlacDestak é uma empresa dedicada à Construção em Aço Leve - LSF
+          (Light Steel Framing) e aplicação de tetos falsos e divisórias em
+          Gesso Cartonado (Pladur). Nossa história começou em 2008, e em 2019
+          fomos oficialmente fundados com o objetivo de melhor atender aos
+          nossos clientes.
+        </p>
+        <p>
+          Trabalhamos diariamente para lhe prestar um serviço personalizado de
+          qualidade e excelência, combinando conhecimento técnico e matérias
+          primas ecoeficientes em todo o território nacional.
+        </p>
+      </div>
+      <div class="about-image-wrapper">
+        <img src="assets/imgs/aboutImage.png" alt="Sobre a PlacDestak" />
+      </div>
     </div>
-    <img ngSrc="assets/imgs/aboutImage.png" width="500" height="500" />
   </section>
 
   <section class="services-section">
-    <div class="services-text">
+    <div class="section-header">
       <h2>EXPERIÊNCIA E QUALIDADE</h2>
-      <h3>
-        Construção em Aço Leve - LSF (Light Steel Framing) & Instalação de Gesso
-        Cartonado
-      </h3>
+      <h3>Soluções em Aço Leve (LSF) & Gesso Cartonado</h3>
     </div>
-    <div class="services">
-      @for (service of services; track service) {
-        <div class="services-item">
-          <h3>{{ service.title }}</h3>
-          <p>{{ service.description }}</p>
 
-          @if ((service.advantages ?? []).length > 0) {
-            <ul>
-              @for (advantage of service.advantages; track advantage) {
-                <li>{{ advantage }}</li>
-              }
-            </ul>
-          }
+    <div class="services-grid">
+      @for (service of services; track service.title) {
+        <div class="service-card">
+          <div class="card-image">
+            <img [src]="service.img" [alt]="service.title" />
+          </div>
+          <div class="card-body">
+            <h3>{{ service.title }}</h3>
+            <p>{{ service.description }}</p>
 
-          <img [src]="service.img" alt="Service" />
+            @if ((service.advantages ?? []).length > 0) {
+              <ul class="advantages-list">
+                @for (advantage of service.advantages; track advantage) {
+                  <li>{{ advantage }}</li>
+                }
+              </ul>
+            }
+          </div>
         </div>
       }
     </div>
   </section>
 
   <section class="portfolio-section">
-    <div class="portfolio-text">
+    <div class="section-header">
       <h2>NOSSO PORTFÓLIO</h2>
       <h3>Veja alguns trabalhos realizados</h3>
     </div>
 
-    <div class="portfolio">
+    <div class="portfolio-grid">
       @for (p of portfolioImgs; track p.title) {
         <app-portfolio-card [item]="p" />
       }
