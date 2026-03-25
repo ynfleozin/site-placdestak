@@ -2,19 +2,31 @@
   <nav class="menu">
     <div class="menu-desktop">
       <ul class="desktop-links left">
-        <li><a routerLink="/">HOME</a></li>
-        <li><a routerLink="/empresa">EMPRESA</a></li>
+        <li>
+          <a
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >HOME</a
+          >
+        </li>
+        <li><a routerLink="/empresa" routerLinkActive="active">EMPRESA</a></li>
       </ul>
+
       <img
         routerLink="/"
         ngSrc="assets/imgs/LogoPlacDestakText.png"
         width="150"
         height="100"
         class="logo"
+        alt="Logo Placdestak"
       />
+
       <ul class="desktop-links right">
-        <li><a routerLink="/orcamentos">ORÇAMENTOS</a></li>
-        <li><a routerLink="/contacto">CONTATO</a></li>
+        <li>
+          <a routerLink="/orcamentos" routerLinkActive="active">ORÇAMENTOS</a>
+        </li>
+        <li><a routerLink="/contacto" routerLinkActive="active">CONTATO</a></li>
       </ul>
     </div>
 
@@ -22,36 +34,79 @@
       <img
         routerLink="/"
         ngSrc="assets/imgs/LogoPlacDestakText.png"
-        width="150"
-        height="100"
+        width="120"
+        height="80"
         class="logo-mobile"
+        alt="Logo Placdestak"
       />
-      <button #menuToggle class="menu-toggle">
+
+      <button
+        class="menu-toggle"
+        (click)="toggleMenu()"
+        aria-label="Abrir menu"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="50"
-          height="50"
+          width="40"
+          height="40"
           viewBox="0 0 50 50"
         >
           <g
             fill="none"
             stroke-linecap="round"
             stroke-linejoin="round"
-            stroke-width="2"
+            stroke-width="3"
           >
-            <path stroke="#5485A6" d="M6.25 25h37.5" />
-            <path stroke="#B3D8EA" d="M6.25 12.5h37.5m-37.5 25h37.5z" />
+            <path stroke="#295c7e" d="M6.25 15h37.5" />
+            <path stroke="#295c7e" d="M6.25 25h37.5" />
+            <path stroke="#295c7e" d="M6.25 35h37.5" />
           </g>
         </svg>
       </button>
 
-      <div #menuOverlay class="mobile-menu-overlay"></div>
+      <div
+        class="mobile-menu-overlay"
+        [class.show]="isMenuOpen"
+        (click)="closeMenu()"
+      ></div>
 
-      <ul #mobileLinks class="mobile-links">
-        <li><a routerLink="/">HOME</a></li>
-        <li><a routerLink="/empresa">EMPRESA</a></li>
-        <li><a routerLink="/orcamentos">ORÇAMENTOS</a></li>
-        <li><a routerLink="/contacto">CONTACTO</a></li>
+      <ul class="mobile-links" [class.open]="isMenuOpen">
+        <li class="close-menu-header">
+          <button (click)="closeMenu()">X</button>
+        </li>
+        <li>
+          <a
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            (click)="closeMenu()"
+            >HOME</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/empresa"
+            routerLinkActive="active"
+            (click)="closeMenu()"
+            >EMPRESA</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/orcamentos"
+            routerLinkActive="active"
+            (click)="closeMenu()"
+            >ORÇAMENTOS</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/contacto"
+            routerLinkActive="active"
+            (click)="closeMenu()"
+            >CONTACTO</a
+          >
+        </li>
       </ul>
     </div>
   </nav>
