@@ -1,5 +1,29 @@
 @import "../../../color-variables.scss";
 
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .company-section {
   display: flex;
   flex-direction: column;
@@ -7,6 +31,7 @@
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 
   .content-block {
     display: flex;
@@ -17,8 +42,30 @@
       flex-direction: row-reverse;
     }
 
+    &:nth-child(1) {
+      .text-wrapper {
+        animation-delay: 0.1s;
+      }
+
+      .image-wrapper {
+        animation-delay: 0.3s;
+      }
+    }
+
+    &:nth-child(2) {
+      .text-wrapper {
+        animation-delay: 0.4s;
+      }
+
+      .image-wrapper {
+        animation-delay: 0.6s;
+      }
+    }
+
     .image-wrapper {
       flex: 1;
+      opacity: 0;
+      animation: fadeInScale 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 
       img {
         width: 100%;
@@ -26,6 +73,11 @@
         border-radius: 20px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         object-fit: cover;
+        transition: transform 0.5s ease;
+
+        &:hover {
+          transform: scale(1.02);
+        }
       }
     }
 
@@ -33,6 +85,8 @@
       flex: 1;
       display: flex;
       flex-direction: column;
+      opacity: 0;
+      animation: slideUpFade 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 
       h2 {
         margin-bottom: 1.5rem;
