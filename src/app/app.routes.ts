@@ -5,6 +5,7 @@ import { BudgetComponent } from './pages/budget/budget.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { CompanyComponent } from './pages/company/company.component';
 import { ComplaintsBookComponent } from './pages/complaints-book/complaints-book.component';
+import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
 
 export const routes: Routes = [
   {
@@ -32,6 +33,11 @@ export const routes: Routes = [
     path: 'livro-reclamacoes',
     title: 'Livro de Reclamações',
     component: ComplaintsBookComponent,
+  },
+  {
+    path: 'privacidade',
+    title: 'Política de Privacidade  - Placdestak',
+    component: PrivacyPolicyComponent,
   },
   {
     path: '**',

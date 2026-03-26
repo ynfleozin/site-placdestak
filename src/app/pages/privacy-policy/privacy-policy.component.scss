@@ -1,0 +1,136 @@
+@import "../../../color-variables.scss";
+
+.legal-page {
+  padding: 6rem 2rem;
+  background-color: #f8f9fa;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .legal-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    .section-header {
+      text-align: center;
+
+      h2 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: $secondary-color;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+      }
+
+      h3 {
+        font-size: 2.5rem;
+        color: $primary-color;
+        font-weight: 700;
+      }
+    }
+
+    .content-card {
+      background: #fff;
+      padding: 4rem;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+      width: 100%;
+
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        .last-updated {
+          color: #888;
+          font-style: italic;
+          font-size: 0.95rem;
+          margin: 0;
+          text-align: right;
+          border-bottom: 1px solid #eee;
+          padding-bottom: 1rem;
+        }
+
+        .policy-section {
+          h4 {
+            font-size: 1.3rem;
+            color: $primary-color;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-left: 15px;
+
+            &::before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 10%;
+              height: 80%;
+              width: 4px;
+              background-color: $secondary-color;
+              border-radius: 2px;
+            }
+          }
+
+          p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.7;
+            text-align: justify;
+            margin: 0;
+          }
+
+          ul {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+
+            li {
+              font-size: 1.1rem;
+              color: #555;
+              line-height: 1.7;
+              margin-bottom: 0.5rem;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .legal-page {
+    padding: 4rem 1rem;
+
+    .legal-container {
+      gap: 2rem;
+
+      .section-header h3 {
+        font-size: 1.8rem;
+      }
+
+      .content-card {
+        padding: 2.5rem 1.5rem;
+
+        .card-body {
+          gap: 2rem;
+
+          .policy-section {
+
+            p,
+            ul li {
+              text-align: left;
+              font-size: 1.05rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
