@@ -1,51 +1,133 @@
-.nf-section{
+@import "../../../color-variables.scss";
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.nf-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  height: 100vh;
+  min-height: 70vh;
+  padding: 2rem;
+  background-color: #f8f9fa;
 
-  .text{
+  .nf-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    padding: 2rem;
-    border-radius: 15px;
-    background-color: #e7e7e7;
-    box-shadow: 0px 0px 18px -3px rgba(0,0,0,0.63);
-    gap: 15px;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    padding: 4rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    width: 100%;
 
-    h1{
-      color: #5485A6;
+    animation: fadeInScale 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+
+    .error-code {
+      font-size: 8rem;
       font-weight: 900;
-      font-size: 10rem;
+      color: $primary-color;
+      line-height: 1;
+      margin-bottom: 1rem;
+      text-shadow: 5px 5px 0px rgba($primary-color, 0.15);
+
+      animation: float 4s ease-in-out infinite;
     }
 
-    h2{
-      font-weight: 800;
-      font-size: 2rem;
+    .error-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 1rem;
     }
 
-    p{
-      font-size: 1.5rem;
-      color: #494949;
+    .error-message {
+      font-size: 1.15rem;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
     }
 
-    button{
-      cursor: pointer;
-      background-color: #5B5B5B;
+    .back-home-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: $primary-color;
       color: white;
-      width: 200px;
-      padding: 1rem;
-      border-radius: 10px;
-      font-weight: 500;
-      font-size: 1.3rem;
-      border: none;
-    }
+      padding: 1.2rem 2.5rem;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba($primary-color, 0.3);
 
-    button:hover{
-      background-color: #5485A6;
+      svg {
+        width: 20px;
+        height: 20px;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover {
+        background-color: darken($primary-color, 8%);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba($primary-color, 0.4);
+
+        svg {
+          transform: scale(1.1);
+        }
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .nf-section {
+    padding: 1rem;
+
+    .nf-content {
+      padding: 3rem 1.5rem;
+
+      .error-code {
+        font-size: 6rem;
+      }
+
+      .error-title {
+        font-size: 1.8rem;
+      }
+
+      .error-message {
+        font-size: 1rem;
+      }
     }
   }
 }
