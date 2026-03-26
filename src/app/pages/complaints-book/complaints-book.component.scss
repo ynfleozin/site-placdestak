@@ -1,0 +1,160 @@
+@import "../../../color-variables.scss";
+
+.complaints-page {
+  padding: 6rem 2rem;
+  background-color: #f8f9fa;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .legal-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    .section-header {
+      text-align: center;
+
+      h2 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: $secondary-color;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+      }
+
+      h3 {
+        font-size: 2.5rem;
+        color: $primary-color;
+        font-weight: 700;
+      }
+    }
+
+    .info-card {
+      background: #fff;
+      padding: 4rem 3rem;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      .legal-icon {
+        width: 60px;
+        height: 60px;
+        color: rgba($primary-color, 0.2);
+      }
+
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+
+        p {
+          font-size: 1.15rem;
+          color: #444;
+          line-height: 1.7;
+          margin: 0;
+          text-align: center;
+
+          strong {
+            color: $primary-color;
+            font-weight: 600;
+          }
+        }
+
+        .highlight-text {
+          font-weight: 500;
+          color: #333;
+          background-color: rgba($secondary-color, 0.05);
+          padding: 1rem;
+          border-radius: 10px;
+          border-left: 4px solid $secondary-color;
+        }
+
+        .portal-btn {
+          margin-top: 2rem;
+          display: inline-flex;
+          align-items: center;
+          gap: 12px;
+          text-decoration: none;
+          background-color: $primary-color;
+          color: white;
+          padding: 1.2rem 2.5rem;
+          font-size: 1.1rem;
+          font-weight: 600;
+          border: none;
+          border-radius: 30px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow: 0 5px 15px rgba($primary-color, 0.3);
+
+          .external-icon {
+            width: 18px;
+            height: 18px;
+          }
+
+          &:hover {
+            background-color: darken($primary-color, 8%);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba($primary-color, 0.4);
+          }
+        }
+      }
+    }
+
+    .extra-info {
+      text-align: center;
+
+      p {
+        font-size: 0.95rem;
+        color: #777;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .complaints-page {
+    padding: 4rem 1rem;
+
+    .legal-container {
+      gap: 2rem;
+
+      .section-header h3 {
+        font-size: 1.8rem;
+      }
+
+      .info-card {
+        padding: 3rem 1.5rem;
+
+        .card-body p {
+          font-size: 1.05rem;
+        }
+
+        .portal-btn {
+          width: 100%;
+          justify-content: center;
+          padding: 1rem 1.5rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
