@@ -318,7 +318,7 @@
 // Responsividade
 @media (max-width: 768px) {
   .headline-section {
-    height: 70vh;
+    height: 50vh;
 
     .headline {
       h1 {
@@ -347,5 +347,13 @@
 
   .section-header h3 {
     font-size: 1.8rem;
+  }
+
+  .services-section {
+    padding: 4rem 1rem;
+
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
   }
 }
