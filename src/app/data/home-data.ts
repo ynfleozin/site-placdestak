@@ -72,12 +72,20 @@ export const SERVICES = [
 export const PORTFOLIO_IMGS = [
   {
     id: 1,
-    img: 'assets/imgs/projects/moradia-belverde/moradia-belvedere-01.png',
-    title: 'Moradia em Belverde',
+    img: 'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_800/v1774572811/26.JPG_gzzutt.jpg',
+    title: 'Casa da Música - Montijo',
     projectImages: [
-      'assets/imgs/projects/moradia-belverde/moradia-belvedere-01.png',
-      'assets/imgs/projects/moradia-belverde/moradia-belvedere-02.png',
-      'assets/imgs/projects/moradia-belverde/moradia-belvedere-01.png',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774572811/26.JPG_gzzutt.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774572811/12.JPG_x6iijl.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774572811/10.JPG_pehn58.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774572815/13.JPG_lzg3be.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774572812/14.JPG_nwzmca.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774572812/9.JPG_zholo9.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774572812/15.JPG_k0l01h.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774572813/20220402_170936.jpg_dtisjd.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774572813/20220406_162636.jpg_ia9lty.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/v1774572812/3.JPG_qmcuzg.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774572813/18.JPG_cgmjoa.jpg',
     ],
   },
 ];
