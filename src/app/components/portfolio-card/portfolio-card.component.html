@@ -1,3 +1,18 @@
-<div class="portfolio-item" (click)="openImages()" style="cursor: pointer;">
-  <img [src]="item.img" alt="Capa do projeto" />
+<div
+  class="portfolio-item"
+  (click)="openImages()"
+  tabindex="0"
+  aria-label="Abrir projeto"
+>
+  <img [src]="item.img" [alt]="item.title" />
+
+  <div class="item-overlay">
+    <div class="overlay-content">
+      <h3>{{ item.title }}</h3>
+      <span class="view-gallery">
+        <mat-icon>visibility</mat-icon>
+        Ver Galeria
+      </span>
+    </div>
+  </div>
 </div>
