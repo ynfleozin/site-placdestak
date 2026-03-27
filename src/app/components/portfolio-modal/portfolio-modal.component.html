@@ -1,27 +1,53 @@
-<div class="modal-header">
-  <h2 mat-dialog-title>{{ data.title }}</h2>
-  <button mat-icon-button (click)="close()"> <mat-icon>close</mat-icon>
-  </button>
-</div>
-
-<div mat-dialog-content class="modal-body">
-  <div class="carousel-container">
-    <img [src]="data.images[currentIndex]" [alt]="data.title" class="main-image">
-
-    @if (data.images.length > 1) {
-      <button mat-mini-fab class="nav-btn prev" (click)="previousImage()"> <mat-icon>chevron_left</mat-icon>
-      </button>
-
-      <button mat-mini-fab class="nav-btn next" (click)="nextImage()"> <mat-icon>chevron_right</mat-icon>
-      </button>
-    }
+<div class="premium-modal-wrapper">
+  <div class="modal-header">
+    <h2 mat-dialog-title>{{ data.title }}</h2>
+    <button class="close-btn" (click)="close()" aria-label="Fechar">
+      <mat-icon>close</mat-icon>
+    </button>
   </div>
 
-  @if (data.images.length > 1) {
-    <div class="indicators">
-      @for (img of data.images; track $index) {
-        <div class="dot" [class.active]="currentIndex === $index"></div>
+  <div mat-dialog-content class="modal-body">
+    <div class="carousel-container">
+      @if (data.images.length > 1) {
+        <button
+          class="nav-btn prev"
+          (click)="previousImage()"
+          aria-label="Imagem Anterior"
+        >
+          <mat-icon>arrow_back_ios_new</mat-icon>
+        </button>
+      }
+
+      <div class="image-wrapper">
+        <img
+          [src]="data.images[currentIndex]"
+          [alt]="data.title"
+          class="main-image"
+        />
+      </div>
+
+      @if (data.images.length > 1) {
+        <button
+          class="nav-btn next"
+          (click)="nextImage()"
+          aria-label="Imagem Seguinte"
+        >
+          <mat-icon>arrow_forward_ios</mat-icon>
+        </button>
       }
     </div>
-  }
+
+    @if (data.images.length > 1) {
+      <div class="indicators">
+        @for (img of data.images; track $index) {
+          <button
+            class="dot"
+            [class.active]="currentIndex === $index"
+            (click)="goToImage($index)"
+            aria-label="Ir para imagem"
+          ></button>
+        }
+      </div>
+    }
+  </div>
 </div>
