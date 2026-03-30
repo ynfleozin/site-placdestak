@@ -147,4 +147,20 @@ export const PORTFOLIO_IMGS = [
       'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911499/WhatsApp_Image_2023-02-14_at_22.05.20_vgqejy.jpg',
     ],
   },
+  {
+    id: 6,
+    img: 'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_800/v1774911989/74k7ow19_lpiwyt.png',
+    title: 'Apartamento em Queijas - Lisboa',
+    projectImages: [
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911989/74k7ow19_lpiwyt.png',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911992/7botkdsh_e1l4c0.png',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911990/mbnctt2v_nhaxqo.png',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911991/ylpsotwx_mcdwfj.png',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911991/j9jjxby8_ezefkn.png',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911991/l7e88jr9_pjuzdt.png',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911990/fpys94nf_buifcf.png',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911989/8s66psof_fv79v4.png',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911992/oni0phyq_u5itap.png',
+    ],
+  },
 ];
