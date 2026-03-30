@@ -129,4 +129,22 @@ export const PORTFOLIO_IMGS = [
       'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911253/WhatsApp_Image_2023-03-13_at_21.26.36_lexue7.jpg',
     ],
   },
+  {
+    id: 5,
+    img: 'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_800/v1774911504/20230110_092746.jpg_p1ue4x.jpg',
+    title: 'Hotel Tilovi - Vilamoura',
+    projectImages: [
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911504/20230110_092746.jpg_p1ue4x.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911502/20230110_092822.jpg_pfzj8c.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911502/20230110_092803.jpg_dwdvtm.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911501/20230110_092829.jpg_akyssp.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911500/WhatsApp_Image_2023-02-14_at_22.05.18_1_ipi0o1.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911500/WhatsApp_Image_2023-02-14_at_22.05.18_2_euelbc.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911500/WhatsApp_Image_2023-02-14_at_22.05.18_2_euelbc.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911499/WhatsApp_Image_2023-02-14_at_22.05.19_1_j9kzb0.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911499/WhatsApp_Image_2023-02-14_at_22.05.18_huwyqw.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911499/WhatsApp_Image_2023-02-14_at_22.05.19_xb08gs.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911499/WhatsApp_Image_2023-02-14_at_22.05.20_vgqejy.jpg',
+    ],
+  },
 ];
