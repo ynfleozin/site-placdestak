@@ -163,4 +163,18 @@ export const PORTFOLIO_IMGS = [
       'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911992/oni0phyq_u5itap.png',
     ],
   },
+  {
+    id: 7,
+    img: 'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_800/v1774912417/IMG_20250114_155609_151_evjlhc.jpg',
+    title: 'Chanerca da Caparica',
+    projectImages: [
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912417/IMG_20250114_155609_151_evjlhc.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912463/IMG_20241220_150805_889_xhfigx.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912428/IMG_20241220_171253_680_uryhbg.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912526/IMG_20250123_154835_040_sm0bbw.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912527/IMG_20250123_141515_959_u6a7pm.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912528/IMG_20250130_110003_542_bfye3f.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912607/IMG_20250206_164351_792_yselms.jpg',
+    ],
+  },
 ];
