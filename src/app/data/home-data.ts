@@ -178,7 +178,7 @@ export const PORTFOLIO_IMGS = [
     ],
   },
   {
-    id: 9,
+    id: 8,
     img: 'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_800/v1774912949/b038f3b6-da90-46f0-b0e2-ddf2b61ed834_eprbsr.jpg',
     title: 'Remodelação em Vila Real',
     projectImages: [
@@ -192,6 +192,22 @@ export const PORTFOLIO_IMGS = [
       'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912953/15b8db27-1c88-43f2-9e0c-0c96f4c4cda4_sruunc.jpg',
       'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912951/e2e01ceb-ef4b-4f1f-8105-c50a79967a91_enuiy6.jpg',
       'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912949/b038f3b6-da90-46f0-b0e2-ddf2b61ed834_eprbsr.jpg',
+    ],
+  },
+  {
+    id: 9,
+    img: 'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_800/v1774913599/20240615_080627_potzej.jpg',
+    title: 'Alcochete',
+    projectImages: [
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774913599/20240615_080627_potzej.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774913614/20240703_135905_trlq4t.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774913624/20240617_111441_i0sbuv.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774913611/20240627_134140_somp2e.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774913612/20240710_161221_bgvoac.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774913619/IMG_20250606_153716_478_bbuwrp.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774913620/IMG_20250605_124737_899_lpozwp.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774913626/20240615_101829_x9mzvp.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774913627/20240615_101810_tutp27.jpg',
     ],
   },
 ];
