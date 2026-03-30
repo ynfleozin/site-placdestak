@@ -113,4 +113,20 @@ export const PORTFOLIO_IMGS = [
       'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774910785/r0dtwee6_kbrzby.png',
     ],
   },
+  {
+    id: 4,
+    img: 'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_800/v1774911255/WhatsApp_Image_2023-03-13_at_21.26.35_4_t9zscr.jpg',
+    title: 'EMEL - Oriente',
+    projectImages: [
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911255/WhatsApp_Image_2023-03-13_at_21.26.35_4_t9zscr.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911253/WhatsApp_Image_2023-03-13_at_21.26.34_3_rbtlgv.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911254/WhatsApp_Image_2023-03-13_at_21.26.34_sulnuy.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911254/WhatsApp_Image_2023-03-13_at_21.26.35_5_uii4mt.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911254/WhatsApp_Image_2023-03-13_at_21.26.35_1_atfxnq.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911254/WhatsApp_Image_2023-03-13_at_21.26.35_2_ho7gcd.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911253/WhatsApp_Image_2023-03-13_at_21.26.34_4_ngvoj0.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911253/WhatsApp_Image_2023-03-13_at_21.26.35_mvoupb.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774911253/WhatsApp_Image_2023-03-13_at_21.26.36_lexue7.jpg',
+    ],
+  },
 ];
