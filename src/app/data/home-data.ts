@@ -177,4 +177,21 @@ export const PORTFOLIO_IMGS = [
       'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912607/IMG_20250206_164351_792_yselms.jpg',
     ],
   },
+  {
+    id: 9,
+    img: 'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_800/v1774912949/b038f3b6-da90-46f0-b0e2-ddf2b61ed834_eprbsr.jpg',
+    title: 'Remodelação em Vila Real',
+    projectImages: [
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912947/9f89e0eb-46f8-4012-9c0e-fedf371f01fb_xlyznh.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912948/783dc0c1-59a0-4496-bf6b-e9d929f8f63f_dcyjkc.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912948/90a12b8c-8691-4e3d-a642-620b42be7a6d_kn85pi.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912956/932bdea4-28c0-4703-ad52-96726aaf455f_pqiwmb.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912954/b1ffb453-5f41-4e4b-a749-9b353de03579_smg9gs.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912957/681c3727-dfa7-44e8-980c-e54efb728126_vzpkvc.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912958/1401eb5c-57c0-413f-af41-14bf07eaf2a3_danfn0.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912953/15b8db27-1c88-43f2-9e0c-0c96f4c4cda4_sruunc.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912951/e2e01ceb-ef4b-4f1f-8105-c50a79967a91_enuiy6.jpg',
+      'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912949/b038f3b6-da90-46f0-b0e2-ddf2b61ed834_eprbsr.jpg',
+    ],
+  },
 ];
