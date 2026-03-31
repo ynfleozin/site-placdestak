@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { NgOptimizedImage } from '@angular/common';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-header',
@@ -13,11 +14,17 @@ import { NgOptimizedImage } from '@angular/common';
 export class HeaderComponent {
   isMenuOpen = false;
 
+  constructor(private dialog: MatDialog) {}
+
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
   closeMenu() {
     this.isMenuOpen = false;
+  }
+
+  closeMobileMenu(){
+    this.dialog.closeAll()
   }
 }
