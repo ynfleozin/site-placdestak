@@ -52,7 +52,7 @@ export const SERVICES = [
     title: 'Gesso Cartonado',
     description:
       'Conhecido também como Pladur (gesso cartonado ou gesso laminado), são excelentes opções técnicas e decorativas para paredes, tetos, lareiras, salas acústicas ou revestimentos (interiores ou exteriores) em material versátil, com óptimas características acústicas, térmicas e decorativas.',
-    img: 'assets/imgs/serviceTest.jpg',
+    img: 'assets/imgs/services/gesso-cartonado.webp',
     advantages: [
       'Alto desempenho térmico, acústico e conforto no ambiente',
       'Resistentes ao fogo, humidade e impacto',
@@ -65,7 +65,7 @@ export const SERVICES = [
     title: 'Tetos Amovível e Metálicos',
     description:
       'Os tetos amovíveis e metálicos são sistemas técnicos que permitem acesso fácil às instalações acima do teto, facilitando a manutenção e o reparo. Além disso, oferecem bom desempenho térmico e acústico, regulando a temperatura e reduzindo o ruído entre ambientes. Sua estética moderna, com opções de cores e texturas, permite personalização do ambiente de acordo com as preferências estéticas e funcionais.',
-    img: 'assets/imgs/serviceTest.jpg',
+    img: 'assets/imgs/services/teto-amomivel.webp',
   },
 ];
 
