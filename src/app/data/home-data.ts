@@ -36,7 +36,7 @@ export const SERVICES = [
     title: 'Construção LSF',
     description:
       'O LSF (Light Steel Framing) é um sistema construtivo amplamente utilizado devido às suas vantagens, como resistência estrutural, durabilidade, sustentabilidade e flexibilidade de projeto.',
-    img: 'assets/imgs/serviceTest.jpg',
+    img: 'assets/imgs/services/construcao-lsf.webp',
     advantages: [
       'Conforto térmico e acústico',
       'Construção mais segura',
