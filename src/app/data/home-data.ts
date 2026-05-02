@@ -16,17 +16,17 @@ export const HEADLINE_TEXT = [
 export const FEATURES = [
   {
     icon: 'assets/icons/star.svg',
-    title: 'Qualidade Garantida',
+    title: 'Qualidade garantida',
     text: 'Serviços de alta qualidade, inovadores e adaptados às necessidades de cada projeto.',
   },
   {
     icon: 'assets/icons/teamwork.svg',
-    title: 'Equipe Especializada',
-    text: 'Comprometida em entregar resultados excepcionais através de técnicas avançadas de construção.',
+    title: 'Equipa especializada',
+    text: 'Comprometida em entregar resultados excecionais através de técnicas avançadas de construção.',
   },
   {
     icon: 'assets/icons/budget.svg',
-    title: 'Obtenha um Orçamento',
+    title: 'Obtenha um orçamento',
     text: 'Fale connosco e veja as melhores condições para o seu projeto.',
   },
 ];
@@ -45,26 +45,26 @@ export const SERVICES = [
       'Reduzida mão de obra e recursos',
       'Ampliações simples',
       'Soluções criativas e flexíveis',
-      'Controle de qualidade assegurado',
+      'Controlo de qualidade assegurado',
     ],
   },
   {
     title: 'Gesso Cartonado',
     description:
-      'Conhecido também como Pladur (gesso cartonado ou gesso laminado), são excelentes opções técnicas e decorativas para paredes, tetos, lareiras, salas acústicas ou revestimentos (interiores ou exteriores) em material versátil, com óptimas características acústicas, térmicas e decorativas.',
+      'Conhecido também como Pladur (gesso cartonado ou gesso laminado), são excelentes opções técnicas e decorativas para paredes, tetos, lareiras, salas acústicas ou revestimentos (interiores ou exteriores) em material versátil, com ótimas características acústicas, térmicas e decorativas.',
     img: 'assets/imgs/services/gesso-cartonado.webp',
     advantages: [
       'Alto desempenho térmico, acústico e conforto no ambiente',
       'Resistentes ao fogo, humidade e impacto',
       'Segurança e durabilidade em diferentes ambientes',
       'Podem receber diversos tipos de revestimentos, como pintura e aplicação de azulejos',
-      'Flexibilidade estética e possibilitando a integração com o estilo desejado',
+      'Flexibilidade estética, possibilitando a integração com o estilo desejado',
     ],
   },
   {
-    title: 'Tetos Amovível e Metálicos',
+    title: 'Tetos Amovíveis e Metálicos',
     description:
-      'Os tetos amovíveis e metálicos são sistemas técnicos que permitem acesso fácil às instalações acima do teto, facilitando a manutenção e o reparo. Além disso, oferecem bom desempenho térmico e acústico, regulando a temperatura e reduzindo o ruído entre ambientes. Sua estética moderna, com opções de cores e texturas, permite personalização do ambiente de acordo com as preferências estéticas e funcionais.',
+      'Os tetos amovíveis e metálicos são sistemas técnicos que permitem acesso fácil às instalações acima do teto, facilitando a manutenção e a reparação. Além disso, oferecem bom desempenho térmico e acústico, regulando a temperatura e reduzindo o ruído entre ambientes. A sua estética moderna, com opções de cores e texturas, permite a personalização do ambiente de acordo com as preferências estéticas e funcionais.',
     img: 'assets/imgs/services/teto-amomivel.webp',
   },
 ];
@@ -166,7 +166,7 @@ export const PORTFOLIO_IMGS = [
   {
     id: 7,
     img: 'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_800/v1774912417/IMG_20250114_155609_151_evjlhc.jpg',
-    title: 'Chanerca da Caparica',
+    title: 'Charneca da Caparica',
     projectImages: [
       'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912417/IMG_20250114_155609_151_evjlhc.jpg',
       'https://res.cloudinary.com/dqvohkiol/image/upload/f_auto,q_auto,w_1200/v1774912463/IMG_20241220_150805_889_xhfigx.jpg',
